@@ -3,3 +3,24 @@ Bekker/Wong bearing model)
 Use the pressure–sinkage relation to keep z below your limit:
 p(z) \;=\; \Big(\frac{k_c}{b} + k_\phi\Big) z^{\,n}
 Conservative lunar soil parameters (you can refine later): Bekker (k_c, k_\phi, n) and shear (c, \phi, K)
+z_{\max}=\alpha r
+
+shear:
+\tau=\big(c+\sigma\tan\phi\big)\left(1-e^{-j/K}\right)
+Contact length (rigid wheel approx):
+\ell \approx \sqrt{2 r z_{\max}}
+
+Contact pressure independent of mass:
+p = \left(\frac{k_c}{b}+k_\phi\right)\,z_{\max}^n
+Per-wheel allowable normal load at that sinkage
+W_{w,\max} \;=\; \underbrace{\big(k_c + b\,k_\phi\big)}_{\text{soil}}\;\underbrace{z_{\max}^n\,\sqrt{2 r z_{\max}}}_{\text{geometry}}
+
+total sinkage limited mass:
+\boxed{\,m_{\text{sink}} \;=\; \frac{N_w\,W_{w,\max}}{g_{\text{Moon}}}\,}
+\quad\text{with}\; g_{\text{Moon}}=1.62\ \mathrm{m/s^2}
+
+traction limited mass:
+\boxed{\,m_{\text{trac}} \;=\; \frac{T_{\text{avail}}}{\gamma\,g\big(\sin\theta + C_{rr}\cos\theta\big)}\,}
+
+allowable rover mass:
+\boxed{\,m_{\max} \;=\; \min\big(m_{\text{sink}},\,m_{\text{trac}}\big)\,}
