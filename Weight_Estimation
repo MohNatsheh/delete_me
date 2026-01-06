@@ -1,0 +1,5 @@
+Bekker/Wong bearing model)
+
+Use the pressure–sinkage relation to keep z below your limit:
+p(z) \;=\; \Big(\frac{k_c}{b} + k_\phi\Big) z^{\,n}
+Conservative lunar soil parameters (you can refine later): Bekker (k_c, k_\phi, n) and shear (c, \phi, K)
